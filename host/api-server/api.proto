@@ -1,0 +1,16 @@
+syntax = "proto3";
+// The greeting service definition.
+service Api {
+  // Sends a greeting
+  rpc CallApi (ApiRequest) returns (ApiResponse) {}
+}
+
+// The request message containing the user's name.
+message ApiRequest {
+  string req = 1;
+}
+
+// The response message containing the greetings
+message ApiResponse {
+  string res = 1;
+}

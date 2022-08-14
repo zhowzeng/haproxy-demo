@@ -1,0 +1,16 @@
+syntax = "proto3";
+// The greeting service definition.
+service Arbiter {
+  // Sends a greeting
+  rpc CallArbiter (ArbiterRequest) returns (ArbiterResponse) {}
+}
+
+// The request message containing the user's name.
+message ArbiterRequest {
+  string req = 1;
+}
+
+// The response message containing the greetings
+message ArbiterResponse {
+  string res = 1;
+}
